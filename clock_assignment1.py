@@ -3,7 +3,6 @@ import threading
 from datetime import datetime, timedelta
 import sys
 
-# Global time format (12 or 24 hour)
 time_format = 24
 
 def clock_mode():
@@ -13,7 +12,7 @@ def clock_mode():
     running = True
 
     def wait_for_quit():
-        input()  # No prompt inside thread
+        input()
         global running
         running = False
 
